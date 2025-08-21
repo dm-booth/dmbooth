@@ -1,7 +1,7 @@
 import React from "react";
 import { Camera, Sparkles, ShieldCheck, Clock, MapPin, Phone, Mail, Instagram } from "lucide-react";
 
-// DM BOOTH — Landing Page (v1)
+// DM BOOTH — Landing Page (Final)
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
@@ -21,6 +21,8 @@ export default function HomePage() {
             <a
               href="https://pf.kakao.com/_xahXAn/chat"
               target="_blank"
+              rel="noopener"
+              referrerPolicy="origin-when-cross-origin"
               className="px-4 py-2 rounded-xl bg-pink-500 text-white font-semibold hover:bg-pink-600 transition"
             >
               예약 문의
@@ -33,7 +35,7 @@ export default function HomePage() {
       <section id="hero" className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-pink-100 via-white to-blue-100" />
         <div className="relative max-w-6xl mx-auto px-6 py-28 text-center">
-          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black text-white text-xs font-semibold mb-5">
+          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black text-white text-xs font-semibold mb-8">
             <Sparkles className="w-3.5 h-3.5" /> Summer Event ~ 8/31
           </span>
           <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight">
@@ -48,6 +50,8 @@ export default function HomePage() {
             <a
               href="https://www.instagram.com/DM_BOOTH"
               target="_blank"
+              rel="noopener"
+              referrerPolicy="origin-when-cross-origin"
               className="px-6 py-3 rounded-2xl border border-gray-300 font-semibold flex items-center justify-center gap-2 hover:bg-gray-50"
             >
               <Instagram className="w-4 h-4" /> @DM_BOOTH
@@ -69,8 +73,8 @@ export default function HomePage() {
           <p className="text-gray-600 mt-3">현장에서 바로 느껴지는 차이를 제공합니다.</p>
           <div className="grid md:grid-cols-3 gap-6 mt-10">
             <Card title="대표 직영 운영" icon={<ShieldCheck className="w-5 h-5" />}>
-              수년 경력의 대표가 <strong className="font-semibold text-gray-900">직접 운영 · 진행.</strong>.{" "}
-  <strong className="font-semibold text-gray-900">촬영 유도</strong>와 분위기 리딩까지 책임집니다.
+              수년 경력의 대표가 <strong className="font-semibold text-gray-900">직접 운영 · 진행</strong>.{" "}
+              <strong className="font-semibold text-gray-900">촬영 유도</strong>와 분위기 리딩까지 책임집니다.
             </Card>
             <Card title="빠른 출력" icon={<Camera className="w-5 h-5" />}>
               고사양 장비로 대기 최소화. 많은 하객이 몰려도 끊김 없이 쾌적합니다.
@@ -154,7 +158,7 @@ export default function HomePage() {
               <p className="text-gray-600 mt-3">행사 규모와 시간에 따라 맞춤 견적을 드립니다. (부가세 포함)</p>
             </div>
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-100 text-pink-700 text-xs font-bold">
-              여름 이벤트 ~ 8/30 · 33만원 특가(조건부)
+              여름 이벤트 ~ 8/31 · 33만원 특가(조건부)
             </span>
           </div>
 
@@ -162,7 +166,7 @@ export default function HomePage() {
             <PriceCard
               name="웨딩 EVENT"
               price="₩350,000~"
-              bullets={["가을 이벤트","1.5시간 진행", "무제한 촬영·인화", "방명록&액자 제공", "맞춤 템플릿 1종"]}
+              bullets={["여름 이벤트", "1.5시간 진행", "무제한 촬영·인화", "방명록&액자 제공", "맞춤 템플릿 1종"]}
               cta="상담 요청"
             />
             <PriceCard
@@ -224,6 +228,8 @@ export default function HomePage() {
             <a
               href="https://pf.kakao.com/_xahXAn/chat"
               target="_blank"
+              rel="noopener"
+              referrerPolicy="origin-when-cross-origin"
               className="px-6 py-3 rounded-2xl bg-pink-500 text-white font-semibold hover:bg-pink-600 flex items-center gap-2"
             >
               <Phone className="w-4 h-4" /> 카카오톡 상담
@@ -243,7 +249,15 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6 py-10 text-sm text-gray-500 flex flex-col md:flex-row items-center justify-between gap-3">
           <p>© {new Date().getFullYear()} DM BOOTH. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <a href="https://www.instagram.com/DM_BOOTH" target="_blank" className="hover:opacity-70">Instagram</a>
+            <a
+              href="https://www.instagram.com/DM_BOOTH"
+              target="_blank"
+              rel="noopener"
+              referrerPolicy="origin-when-cross-origin"
+              className="hover:opacity-70"
+            >
+              Instagram
+            </a>
             <a href="mailto:dmbooth@naver.com" className="hover:opacity-70">Email</a>
             <a href="#" className="hover:opacity-70">개인정보처리방침</a>
           </div>
