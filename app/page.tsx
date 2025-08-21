@@ -114,8 +114,8 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
             {[
               { src: "/images/template-film-01.jpg", name: "필름 2x6" },
-              { src: "/images/template-4cut-01.jpg", name: "4컷 클래식" },
-              { src: "/images/template-square-01.jpg", name: "스퀘어 모던" },
+              { src: "/images/template-4cut-01.jpg", name: "2컷 클래식" },
+              { src: "/images/template-square-01.jpg", name: "커스텀드로잉 4컷" },
             ].map((t, i) => (
               <div key={i} className="group overflow-hidden rounded-2xl border bg-white">
                 {/* 카드 높이 살짝 낮춤: aspect-[4/5] → md에서는 원래 비율 */}
@@ -143,10 +143,11 @@ export default function HomePage() {
             <p className="text-gray-600 mt-3">순백/모던/빈티지 컨셉에 맞춘 추천 구성.</p>
             <ul className="mt-6 space-y-3">
               {[
-                "4컷 클래식 화이트 · 2x6 필름 (혼합 가능)",
+                "스태프2인 · 무제한 인화",
                 "웨딩 방명록 · 액자 · 스티커 제공",
                 "하객 대기 최소화 운영(고사양 장비)",
                 "로고/초성/컬러 완전 커스터마이징",
+                "다양한 촬영소품 · 원본파일 제공",
               ].map((txt, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-pink-600 mt-0.5" />
@@ -218,16 +219,16 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             <PriceCard
-              name="웨딩 EVENT"
+              name="웨딩/기업 EVENT"
               price="₩350,000~"
-              bullets={["여름 이벤트", "1.5시간 진행", "무제한 촬영·인화", "방명록&액자 제공", "맞춤 템플릿 1종"]}
+              bullets={["상시시 이벤트", "1.5시간 진행", "현장 스태프2명", "방명록&액자 제공", "맞춤 템플릿 1종"]}
               cta="상담 요청"
             />
             <PriceCard
               name="웨딩/기업 BASIC"
-              price="₩400,000~"
+              price="₩500,000~"
               highlight
-              bullets={["2시간 진행", "브랜딩 템플릿 2종", "SNS 공유 QR", "현장 스태프 2명"]}
+              bullets={["1.5시간 진행", "현장 스태프 2명", "무제한 촬영·인화", "브랜딩 템플릿 2종", "SNS 공유 QR"]}
               cta="행사 문의"
             />
             <PriceCard
@@ -247,7 +248,7 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">고객 후기</h2>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             {[
-              { q: "하객들이 줄이 끊이질 않았어요! 인생샷 쏟아짐", a: "웨딩포토부스" },
+              { q: "대표님!! 저희 결혼식 날, 디엠부스 포토부스를 선택한건 최고의 선택인 거 같아요!! 방명록 볼 때마다 그날의 행복이 다시 느껴지고 눈물이 살짝나요ㅠㅠ 친구 결혼할때 디엠부스 강력추천 할게요!", a: "웨딩 포토부스" },
               { q: "브랜딩 템플릿 감각이 뛰어나 캠페인 효과가 컸어요", a: "기업 프로모션" },
               { q: "아이들이 너무 좋아해서 행사 만족도가 높았습니다", a: "여름 캠프" },
             ].map((r, i) => (
