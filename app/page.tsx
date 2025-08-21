@@ -1,7 +1,7 @@
 import React from "react";
-import { Camera, Sparkles, ShieldCheck, Clock, MapPin, Phone, Mail, Instagram } from "lucide-react";
+import { Camera, Sparkles, ShieldCheck, Clock, MapPin, Phone, Mail, Instagram, CheckCircle2 } from "lucide-react";
 
-// DM BOOTH — Landing Page (Final)
+// DM BOOTH — Landing Page (Wedding/Popup added)
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
@@ -12,6 +12,8 @@ export default function HomePage() {
           <nav className="hidden md:flex gap-6 text-sm font-medium">
             <a href="#services" className="hover:opacity-70">서비스</a>
             <a href="#templates" className="hover:opacity-70">템플릿</a>
+            <a href="#wedding" className="hover:opacity-70">웨딩</a>
+            <a href="#popup" className="hover:opacity-70">팝업</a>
             <a href="#gallery" className="hover:opacity-70">갤러리</a>
             <a href="#pricing" className="hover:opacity-70">가격</a>
             <a href="#reviews" className="hover:opacity-70">후기</a>
@@ -97,7 +99,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Templates */}
+      {/* Templates — 한 줄(3개)만 + 카드 높이 축소 */}
       <section id="templates" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-end justify-between gap-3">
@@ -107,17 +109,17 @@ export default function HomePage() {
             </div>
             <a href="#contact" className="hidden md:inline-block text-sm font-semibold underline underline-offset-4">전체 템플릿 요청하기</a>
           </div>
+
+          {/* 아래 배열을 3개만 남겨 아랫줄 삭제 */}
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
             {[
               { src: "/images/template-film-01.jpg", name: "필름 2x6" },
               { src: "/images/template-4cut-01.jpg", name: "4컷 클래식" },
               { src: "/images/template-square-01.jpg", name: "스퀘어 모던" },
-              { src: "/images/template-6cut-01.jpg", name: "6컷 화이트" },
-              { src: "/images/template-4cut-02.jpg", name: "4컷 웨딩" },
-              { src: "/images/template-film-02.jpg", name: "필름 빈티지" },
             ].map((t, i) => (
               <div key={i} className="group overflow-hidden rounded-2xl border bg-white">
-                <div className="aspect-[3/4] bg-gray-100 overflow-hidden">
+                {/* 카드 높이 살짝 낮춤: aspect-[4/5] → md에서는 원래 비율 */}
+                <div className="aspect-[4/5] md:aspect-[3/4] bg-gray-100 overflow-hidden">
                   <img src={t.src} alt={t.name} className="w-full h-full object-cover group-hover:scale-105 transition" />
                 </div>
                 <div className="p-4 flex items-center justify-between">
@@ -126,6 +128,58 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Wedding — 좌측 큰 사진 + 우측 목록 */}
+      <section id="wedding" className="py-20">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+          <div className="aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100">
+            <img src="/images/wedding-hero.jpg" alt="웨딩 포토부스 샘플" className="w-full h-full object-cover" />
+          </div>
+          <div>
+            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">웨딩</h2>
+            <p className="text-gray-600 mt-3">순백/모던/빈티지 컨셉에 맞춘 추천 구성.</p>
+            <ul className="mt-6 space-y-3">
+              {[
+                "4컷 클래식 화이트 · 2x6 필름 (혼합 가능)",
+                "웨딩 방명록 · 액자 · 스티커 제공",
+                "하객 대기 최소화 운영(고사양 장비)",
+                "로고/초성/컬러 완전 커스터마이징",
+              ].map((txt, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-pink-600 mt-0.5" />
+                  <span className="text-gray-800">{txt}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Popup — 좌측 큰 사진 + 우측 목록 */}
+      <section id="popup" className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+          <div className="aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100">
+            <img src="/images/popup-hero.jpg" alt="팝업/프로모션 포토부스 샘플" className="w-full h-full object-cover" />
+          </div>
+          <div>
+            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">팝업</h2>
+            <p className="text-gray-600 mt-3">브랜드 프로모션/체험형 이벤트에 최적화.</p>
+            <ul className="mt-6 space-y-3">
+              {[
+                "브랜딩 템플릿 2종 · 로고/폰트/메시지 반영",
+                "QR 다운로드 · SNS 업로드 유도 문구",
+                "배경/사인물/스탠드 등 현장 연출 옵션",
+                "데이터 리포트(촬영 수·피크타임) 제공",
+              ].map((txt, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-pink-600 mt-0.5" />
+                  <span className="text-gray-800">{txt}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
