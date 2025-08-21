@@ -105,7 +105,7 @@ export default function HomePage() {
           <div className="flex items-end justify-between gap-3">
             <div>
               <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">인기 템플릿</h2>
-              <p className="text-gray-600 mt-3">인생네컷, 필름, 4컷/6컷, 스퀘어 등 행사에 맞게 추천드립니다.</p>
+              <p className="text-gray-600 mt-3">2X6필름, 2컷/4컷, 드로잉/모던 스타일일 등 행사에 맞게 추천드립니다.</p>
             </div>
             <a href="#contact" className="hidden md:inline-block text-sm font-semibold underline underline-offset-4">전체 템플릿 요청하기</a>
           </div>
