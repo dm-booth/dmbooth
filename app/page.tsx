@@ -113,9 +113,9 @@ export default function HomePage() {
           {/* 아래 배열을 3개만 남겨 아랫줄 삭제 */}
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
             {[
-              { src: "/images/template-film-01.jpg", name: "필름 2x6" },
-              { src: "/images/template-4cut-01.jpg", name: "2컷 클래식" },
-              { src: "/images/template-square-01.jpg", name: "커스텀드로잉 4컷" },
+              { src: "/2X6-film.png", name: "필름 2x6" },
+              { src: "/custom-2cut.png", name: "2컷 클래식" },
+              { src: "/custom-4cut.png", name: "커스텀드로잉 4컷" },
             ].map((t, i) => (
               <div key={i} className="group overflow-hidden rounded-2xl border bg-white">
                 {/* 카드 높이 살짝 낮춤: aspect-[4/5] → md에서는 원래 비율 */}
