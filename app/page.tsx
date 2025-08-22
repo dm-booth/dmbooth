@@ -71,7 +71,7 @@ export default function HomePage() {
       {/* Services */}
       <section id="services" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">왜 디엠부스인가요?</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">📍왜 디엠부스인가요?</h2>
           <p className="text-gray-600 mt-3">현장에서 바로 느껴지는 차이를 제공합니다.</p>
           <div className="grid md:grid-cols-3 gap-6 mt-10">
             <Card title="대표 직영 운영" icon={<ShieldCheck className="w-5 h-5" />}>
@@ -104,7 +104,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-end justify-between gap-3">
             <div>
-              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">인기 템플릿</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">📍인기 템플릿</h2>
               <p className="text-gray-600 mt-3">2X6필름, 2컷/4컷, 드로잉/모던 스타일일 등 행사에 맞게 추천드립니다.</p>
             </div>
             <a href="#contact" className="hidden md:inline-block text-sm font-semibold underline underline-offset-4">전체 템플릿 요청하기</a>
@@ -188,7 +188,7 @@ export default function HomePage() {
       {/* Gallery */}
       <section id="gallery" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">현장 스냅</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">📍현장 스냅</h2>
           <p className="text-gray-600 mt-3">웨딩/기업/학교/교회/축제 등 다양한 현장 스토리.</p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
             {Array.from({ length: 9 }).map((_, i) => (
@@ -209,8 +209,8 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-end justify-between">
             <div>
-              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">패키지 & 가격</h2>
-              <p className="text-gray-600 mt-3">행사 규모와 시간에 따라 맞춤 견적을 드립니다. (부가세 포함)</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">📍패키지 & 가격</h2>
+              <p className="text-gray-600 mt-3">행사 규모와 시간에 따라 맞춤 견적을 드립니다. (부가세 별도)</p>
             </div>
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-100 text-pink-700 text-xs font-bold">
               여름 이벤트 ~ 8/31 · 33만원 특가(조건부)
@@ -238,14 +238,14 @@ export default function HomePage() {
               cta="견적 받기"
             />
           </div>
-          <p className="text-xs text-gray-500 mt-4">* 장소/시간/옵션(배경/사인물/추가필름)에 따라 변동될 수 있습니다.</p>
+          <p className="text-xs text-gray-500 mt-4">* 장소/시간/옵션(백월/커스텀시트지/추가필름)에 따라 변동될 수 있습니다.</p>
         </div>
       </section>
 
       {/* Reviews */}
       <section id="reviews" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">고객 후기</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">📍고객 후기</h2>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             {[
               { q: "결혼식 날 디엠부스를 선택한 건 최고의 선택이었어요!✨방명록을 볼 때마다 그날의 행복이 다시 떠오르고,결혼식을 오래 기억에 남게 하는 최고의 아이템이라고 생각합니다!꼭 친구들 결혼식에 하라고 추천할게요!😊", a: "웨딩 포토부스" },
@@ -264,7 +264,7 @@ export default function HomePage() {
       {/* FAQ */}
       <section id="faq" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">자주 묻는 질문</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">📍자주 묻는 질문</h2>
           <div className="mt-8 space-y-3">
             <Faq q="전원은 어떻게 필요하나요?" a="반경 10m 이내 콘센트 1구면 충분합니다. 연장선은 저희가 준비합니다." />
             <Faq q="현장 인원은 몇 명이 오나요?" a="행사 규모에 따라 1~2명이 상주하며 촬영 유도와 동선을 리드합니다." />
@@ -277,7 +277,7 @@ export default function HomePage() {
       {/* Contact CTA */}
       <section id="contact" className="py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">지금 바로 일정 확인해 드릴게요</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">지금 바로 일정 확인해 드릴게요!</h2>
           <p className="text-gray-600 mt-3">카카오톡 채널이나 이메일로 편하게 문의 주세요.</p>
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
@@ -352,7 +352,7 @@ function PriceCard({
     <div className={"rounded-2xl border p-6 bg-white flex flex-col " + (highlight ? "ring-2 ring-pink-500 shadow-md" : "shadow-sm")}>
       <div className="flex items-baseline justify-between">
         <h3 className="text-lg font-extrabold tracking-tight">{name}</h3>
-        <span className="text-sm px-2 py-1 rounded-full bg-gray-100">부가세 포함</span>
+        <span className="text-sm px-2 py-1 rounded-full bg-gray-100">부가세 별도</span>
       </div>
       <p className="mt-2 text-3xl font-black">{price}</p>
       <ul className="mt-4 space-y-2 text-sm text-gray-700">
