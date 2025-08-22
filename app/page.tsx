@@ -75,8 +75,7 @@ export default function HomePage() {
           <p className="text-gray-600 mt-3">현장에서 바로 느껴지는 차이를 제공합니다.</p>
           <div className="grid md:grid-cols-3 gap-6 mt-10">
             <Card title="대표 직영 운영" icon={<ShieldCheck className="w-5 h-5" />}>
-              수년 경력의 대표가 <strong className="font-semibold text-gray-900">직접 운영 · 진행</strong>.{" "}
-              <strong className="font-semibold text-gray-900">촬영 유도</strong>와 분위기 리딩까지 책임집니다.
+              수년 경력의 대표가 <strong className="font-semibold text-gray-900">직접 운영 · 진행 · 촬영 유도</strong>와 분위기 리딩까지 책임집니다.
             </Card>
             <Card title="빠른 출력" icon={<Camera className="w-5 h-5" />}>
               고사양 장비로 대기 최소화. 많은 하객이 몰려도 끊김 없이 쾌적합니다.
