@@ -228,13 +228,13 @@ export default function HomePage() {
             <PriceCard
               name="웨딩/기업 EVENT"
               price="₩350,000~"
-              bullets={["상시시 이벤트", "1.5시간 진행", "현장 스태프2명", "방명록&액자 제공", "맞춤 템플릿 1종"]}
+              highlight
+              bullets={["상시 이벤트", "1.5시간 진행", "현장 스태프2명", "방명록&액자 제공", "맞춤 템플릿 1종"]}
               cta="상담 요청"
             />
             <PriceCard
               name="웨딩/기업 BASIC"
               price="₩500,000~"
-              highlight
               bullets={["1.5시간 진행", "현장 스태프 2명", "무제한 촬영·인화", "브랜딩 템플릿 2종", "SNS 공유 QR"]}
               cta="행사 문의"
             />
