@@ -113,21 +113,29 @@ export default function HomePage() {
           {/* 아래 배열을 3개만 남겨 아랫줄 삭제 */}
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
             {[
-              { src: "/2X6-film.png", name: "필름 2x6" },
-              { src: "/custom-2cut.png", name: "2컷 클래식" },
-              { src: "/custom-4cut.png", name: "커스텀드로잉 4컷" },
-            ].map((t, i) => (
-              <div key={i} className="group overflow-hidden rounded-2xl border bg-white">
-                {/* 카드 높이 살짝 낮춤: aspect-[4/5] → md에서는 원래 비율 */}
-                <div className="aspect-[4/5] md:aspect-[3/4] bg-gray-100 overflow-hidden">
-                  <img src={t.src} alt={t.name} className="w-full h-full object-cover group-hover:scale-105 transition" />
-                </div>
-                <div className="p-4 flex items-center justify-between">
-                  <span className="font-semibold">{t.name}</span>
-                  <span className="text-xs px-2 py-1 rounded-full bg-gray-100">커스텀 가능</span>
-                </div>
-              </div>
-            ))}
+  { src: "/2X6-film.png",     name: "필름 2x6" },
+  { src: "/custom-2cut.png",  name: "2컷 클래식" },
+  { src: "/custom-4cut.png",  name: "커스텀드로잉 4컷" },
+].map((t, i) => (
+  <div key={i} className="group overflow-hidden rounded-2xl border bg-white">
+    {/* 이미지 박스 */}
+    <div className="aspect-[2/3] bg-gray-100 flex items-center justify-center p-2">
+      <img
+        src={t.src}
+        alt={t.name}
+        className="max-h-full max-w-full object-contain"
+        loading="lazy"
+      />
+    </div>
+
+    {/* 하단 텍스트 */}
+    <div className="p-4 flex items-center justify-between">
+      <span className="font-semibold">{t.name}</span>
+      <span className="text-xs px-2 py-1 rounded-full bg-gray-100">커스텀 가능</span>
+    </div>
+  </div>
+))}
+
           </div>
         </div>
       </section>
