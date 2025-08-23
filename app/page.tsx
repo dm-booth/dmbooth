@@ -1,5 +1,15 @@
 import React from "react";
-import { Camera, Sparkles, ShieldCheck, Clock, MapPin, Phone, Mail, Instagram, CheckCircle2 } from "lucide-react";
+import {
+  Camera,
+  Sparkles,
+  ShieldCheck,
+  Clock,
+  MapPin,
+  Phone,
+  Mail,
+  Instagram,
+  CheckCircle2,
+} from "lucide-react";
 
 // DM BOOTH — Landing Page (Wedding/Popup added)
 export default function HomePage() {
@@ -8,7 +18,9 @@ export default function HomePage() {
       {/* Header */}
       <header className="sticky top-0 z-50 backdrop-blur bg-white/80 border-b">
         <div className="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
-          <a href="#hero" className="font-extrabold tracking-tight text-xl">DM BOOTH</a>
+          <a href="#hero" className="font-extrabold tracking-tight text-xl">
+            DM BOOTH
+          </a>
           <nav className="hidden md:flex gap-6 text-sm font-medium">
             <a href="#services" className="hover:opacity-70">서비스</a>
             <a href="#templates" className="hover:opacity-70">템플릿</a>
@@ -41,14 +53,19 @@ export default function HomePage() {
             <Sparkles className="w-3.5 h-3.5" /> Summer Event ~ 8/31
           </span>
           <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight">
-            사진은 순간을 남기고,<br/> <span className="text-pink-600">디엠부스</span>는 그 순간을 완성합니다.
+            사진은 순간을 남기고,<br /> <span className="text-pink-600">디엠부스</span>는 그 순간을 완성합니다.
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
             웨딩 · 기업행사 · 팝업스토어 · 학교축제 · 연말시상식까지.
             <br className="hidden md:block" /> 모든 이벤트에 최적화된 프리미엄 포토부스.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="#pricing" className="px-6 py-3 rounded-2xl bg-gray-900 text-white font-semibold hover:bg-gray-800">패키지 보기</a>
+            <a
+              href="#pricing"
+              className="px-6 py-3 rounded-2xl bg-gray-900 text-white font-semibold hover:bg-gray-800"
+            >
+              패키지 보기
+            </a>
             <a
               href="https://www.instagram.com/DM_BOOTH"
               target="_blank"
@@ -59,11 +76,18 @@ export default function HomePage() {
               <Instagram className="w-4 h-4" /> @DM_BOOTH
             </a>
           </div>
+
           {/* Stats */}
           <div className="mt-10 grid grid-cols-3 max-w-md mx-auto text-sm text-gray-600">
-            <div className="py-3 border-r">연간 행사 <span className="font-bold text-gray-900">200+</span></div>
-            <div className="py-3 border-r">만족도 <span className="font-bold text-gray-900">4.9/5</span></div>
-            <div className="py-3">템플릿 <span className="font-bold text-gray-900">100+</span></div>
+            <div className="py-3 border-r">
+              연간 행사 <span className="font-bold text-gray-900">200+</span>
+            </div>
+            <div className="py-3 border-r">
+              만족도 <span className="font-bold text-gray-900">4.9/5</span>
+            </div>
+            <div className="py-3">
+              템플릿 <span className="font-bold text-gray-900">100+</span>
+            </div>
           </div>
         </div>
       </section>
@@ -73,6 +97,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">📍왜 디엠부스인가요?</h2>
           <p className="text-gray-600 mt-3">현장에서 바로 느껴지는 차이를 제공합니다.</p>
+
           <div className="grid md:grid-cols-3 gap-6 mt-10">
             <Card title="대표 직영 운영" icon={<ShieldCheck className="w-5 h-5" />}>
               수년 경력의 대표가 <strong className="font-semibold text-gray-900">직접 운영 · 진행 · 촬영 유도</strong>와 분위기 리딩까지 책임집니다.
@@ -84,6 +109,7 @@ export default function HomePage() {
               템플릿/로고/컬러/문구까지 행사 컨셉에 맞게 1:1 맞춤 제작합니다.
             </Card>
           </div>
+
           <div className="grid md:grid-cols-3 gap-6 mt-6">
             <Card title="웨딩 방명록&액자 제공" icon={<Mail className="w-5 h-5" />}>
               액자 & 포토 방명록과 스티커, 펜까지 풀세트로 제공하여 추억을 더합니다.
@@ -98,43 +124,37 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Templates — 한 줄(3개)만 + 카드 높이 축소 */}
+      {/* Templates */}
       <section id="templates" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-end justify-between gap-3">
             <div>
               <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">📍인기 템플릿</h2>
-              <p className="text-gray-600 mt-3">2X6필름, 2컷/4컷, 드로잉/모던 스타일일 등 행사에 맞게 추천드립니다.</p>
+              <p className="text-gray-600 mt-3">2X6필름, 2컷/4컷, 드로잉/모던 스타일 등 행사에 맞게 추천드립니다.</p>
             </div>
-            <a href="#contact" className="hidden md:inline-block text-sm font-semibold underline underline-offset-4">전체 템플릿 요청하기</a>
+            <a href="#contact" className="hidden md:inline-block text-sm font-semibold underline underline-offset-4">
+              전체 템플릿 요청하기
+            </a>
           </div>
 
-          {/* 아래 배열을 3개만 남겨 아랫줄 삭제 */}
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
             {[
-  { src: "/2X6-film.png",     name: "필름 2x6" },
-  { src: "/custom-2cut.png",  name: "2컷 클래식" },
-  { src: "/custom-4cut.png",  name: "커스텀드로잉 4컷" },
-].map((t, i) => (
-  <div key={i} className="group overflow-hidden rounded-2xl border bg-white">
-    {/* 이미지 박스 */}
-    <div className="aspect-[2/3] bg-gray-100 flex items-center justify-center p-2">
-      <img
-        src={t.src}
-        alt={t.name}
-        className="max-h-full max-w-full object-contain"
-        loading="lazy"
-      />
-    </div>
-
-    {/* 하단 텍스트 */}
-    <div className="p-4 flex items-center justify-between">
-      <span className="font-semibold">{t.name}</span>
-      <span className="text-xs px-2 py-1 rounded-full bg-gray-100">커스텀 가능</span>
-    </div>
-  </div>
-))}
-
+              { src: "/2X6-film.png", name: "필름 2x6" },
+              { src: "/custom-2cut.png", name: "2컷 클래식" },
+              { src: "/custom-4cut.png", name: "커스텀드로잉 4컷" },
+            ].map((t, i) => (
+              <div key={i} className="group overflow-hidden rounded-2xl border bg-white">
+                {/* 이미지 박스 */}
+                <div className="aspect-[2/3] bg-gray-100 flex items-center justify-center p-2">
+                  <img src={t.src} alt={t.name} className="max-h-full max-w-full object-contain" loading="lazy" />
+                </div>
+                {/* 하단 텍스트 */}
+                <div className="p-4 flex items-center justify-between">
+                  <span className="font-semibold">{t.name}</span>
+                  <span className="text-xs px-2 py-1 rounded-full bg-gray-100">커스텀 가능</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -145,28 +165,46 @@ export default function HomePage() {
           <div className="aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100">
             <img src="/wedding-main.jpg" alt="웨딩 포토부스 샘플" className="w-full h-full object-cover" />
           </div>
+
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">웨딩</h2>
             <p className="text-gray-600 mt-3">순백/모던/빈티지 컨셉에 맞춘 추천 구성.</p>
+
             <ul className="mt-6 space-y-3">
               {[
-                "✅스태프2인 · 무제한 인화",
-                "✅웨딩 방명록 · 액자 · 스티커 제공",
-                "✅하객 대기 최소화 운영(고사양 장비)",
-                "✅로고/초성/컬러 완전 커스터마이징",
-                "✅다양한 촬영소품 · 원본파일 제공",
+                "스태프2인 · 무제한 인화",
+                "웨딩 방명록 · 액자 · 스티커 제공",
+                "하객 대기 최소화 운영(고사양 장비)",
+                "로고/초성/컬러 완전 커스터마이징",
+                "다양한 촬영소품 · 원본파일 제공",
               ].map((txt, i) => (
-                   </li>
-  ))}
-</ul>
+                <li key={i} className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-pink-600 mt-0.5" />
+                  <span className="text-gray-800">{txt}</span>
+                </li>
+              ))}
+            </ul>
 
-{/* 웨딩 섹션: 작은 가로형 이미지 3개 */}
-<div className="flex gap-2 sm:gap-4 mt-6">
-  <img src="/images/wedding-side1.jpg" alt="웨딩 보조이미지 1" className="w-24 h-16 sm:w-28 sm:h-20 object-cover rounded-lg shadow" />
-  <img src="/images/wedding-side2.jpg" alt="웨딩 보조이미지 2" className="w-24 h-16 sm:w-28 sm:h-20 object-cover rounded-lg shadow" />
-  <img src="/images/wedding-side3.jpg" alt="웨딩 보조이미지 3" className="w-24 h-16 sm:w-28 sm:h-20 object-cover rounded-lg shadow" />
-</div>
-
+            {/* 웨딩 섹션: 작은 가로형 이미지 3개 */}
+            <div className="flex gap-2 sm:gap-4 mt-6">
+              <img
+                src="/images/wedding-side1.jpg"
+                alt="웨딩 보조이미지 1"
+                className="w-24 h-16 sm:w-28 sm:h-20 object-cover rounded-lg shadow"
+              />
+              <img
+                src="/images/wedding-side2.jpg"
+                alt="웨딩 보조이미지 2"
+                className="w-24 h-16 sm:w-28 sm:h-20 object-cover rounded-lg shadow"
+              />
+              <img
+                src="/images/wedding-side3.jpg"
+                alt="웨딩 보조이미지 3"
+                className="w-24 h-16 sm:w-28 sm:h-20 object-cover rounded-lg shadow"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Popup — 좌측 큰 사진 + 우측 목록 */}
@@ -200,12 +238,13 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">📍현장 스냅</h2>
           <p className="text-gray-600 mt-3">웨딩/기업/학교/교회/축제 등 다양한 현장 스토리.</p>
+
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
             {Array.from({ length: 9 }).map((_, i) => (
               <div key={i} className="overflow-hidden rounded-2xl bg-gray-100 aspect-[3/2]">
                 <img
-        src={`/images${i + 1}.jpg`}
-        alt={`현장사진 ${i + 1}`}
+                  src={`/images/${i + 1}.jpg`}       // ← 경로 수정 완료
+                  alt={`현장사진 ${i + 1}`}
                   className="w-full h-full object-cover hover:scale-105 transition"
                 />
               </div>
@@ -248,7 +287,9 @@ export default function HomePage() {
               cta="견적 받기"
             />
           </div>
-          <p className="text-xs text-gray-500 mt-4">* 장소/시간/옵션(백월/커스텀시트지/추가필름)에 따라 변동될 수 있습니다.</p>
+          <p className="text-xs text-gray-500 mt-4">
+            * 장소/시간/옵션(백월/커스텀시트지/추가필름)에 따라 변동될 수 있습니다.
+          </p>
         </div>
       </section>
 
@@ -257,20 +298,20 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">📍고객 후기</h2>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
-           {[
-    {
-      q: [
-        "결혼식 날 디엠부스를 선택한 건 최고의 선택이었어요!",
-        "방명록을 볼 때마다 그날의 행복이 다시 떠오르고, 결혼식을 오래 기억에 남게 하는 최고의 아이템이라고 생각합니다.",
-        "꼭 친구들 결혼식에 하라고 추천할게요! 😊",
-      ],
-      a: "웨딩 포토부스",
-    },
+            {[
+              {
+                q: [
+                  "결혼식 날 디엠부스를 선택한 건 최고의 선택이었어요!",
+                  "방명록을 볼 때마다 그날의 행복이 다시 떠오르고, 결혼식을 오래 기억에 남게 하는 최고의 아이템이라고 생각합니다.",
+                  "꼭 친구들 결혼식에 하라고 추천할게요! 😊",
+                ],
+                a: "웨딩 포토부스",
+              },
               { q: "브랜딩 템플릿 감각이 뛰어나 캠페인 효과가 컸어요", a: "기업 프로모션" },
               { q: "아이들이 너무 좋아해서 행사 만족도가 높았습니다", a: "여름 캠프" },
             ].map((r, i) => (
               <blockquote key={i} className="rounded-2xl border p-6 bg-white shadow-sm">
-                <p className="font-semibold leading-relaxed">“{r.q}”</p>
+                <p className="font-semibold leading-relaxed">“{Array.isArray(r.q) ? r.q.join(" ") : r.q}”</p>
                 <cite className="not-italic text-sm text-gray-500 inline-block mt-3">— {r.a}</cite>
               </blockquote>
             ))}
@@ -330,8 +371,12 @@ export default function HomePage() {
             >
               Instagram
             </a>
-            <a href="mailto:dmbooth@naver.com" className="hover:opacity-70">Email</a>
-            <a href="#" className="hover:opacity-70">개인정보처리방침</a>
+            <a href="mailto:dmbooth@naver.com" className="hover:opacity-70">
+              Email
+            </a>
+            <a href="#" className="hover:opacity-70">
+              개인정보처리방침
+            </a>
           </div>
         </div>
       </footer>
@@ -341,7 +386,15 @@ export default function HomePage() {
 
 // ——————————————————————————————
 // 재사용 컴포넌트
-function Card({ title, icon, children }: { title: string; icon?: React.ReactNode; children: React.ReactNode }) {
+function Card({
+  title,
+  icon,
+  children,
+}: {
+  title: string;
+  icon?: React.ReactNode;
+  children: React.ReactNode;
+}) {
   return (
     <div className="rounded-2xl border bg-white p-6 shadow-sm">
       <div className="flex items-center gap-2 mb-2 text-gray-900 font-semibold">
@@ -366,7 +419,12 @@ function PriceCard({
   highlight?: boolean;
 }) {
   return (
-    <div className={"rounded-2xl border p-6 bg-white flex flex-col " + (highlight ? "ring-2 ring-pink-500 shadow-md" : "shadow-sm")}>
+    <div
+      className={
+        "rounded-2xl border p-6 bg-white flex flex-col " +
+        (highlight ? "ring-2 ring-pink-500 shadow-md" : "shadow-sm")
+      }
+    >
       <div className="flex items-baseline justify-between">
         <h3 className="text-lg font-extrabold tracking-tight">{name}</h3>
         <span className="text-sm px-2 py-1 rounded-full bg-gray-100">부가세 별도</span>
@@ -380,7 +438,10 @@ function PriceCard({
           </li>
         ))}
       </ul>
-      <a href="#contact" className="mt-6 px-4 py-2 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 text-center">
+      <a
+        href="#contact"
+        className="mt-6 px-4 py-2 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 text-center"
+      >
         {cta}
       </a>
     </div>
