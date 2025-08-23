@@ -224,10 +224,10 @@ export default function HomePage() {
 
       <ul className="mt-6 space-y-3">
         {[
-          "✅브랜딩 템플릿 2종 · 로고/폰트/메시지 반영",
-          "✅QR 다운로드 · SNS 업로드 유도 문구",
-          "✅배경/사인물/스탠드 등 현장 연출 옵션",
-          "✅데이터 리포트(촬영 수·피크타임) 제공",
+          "브랜딩 템플릿 2종 · 로고/폰트/메시지 반영",
+          "QR 다운로드 · SNS 업로드 유도 문구",
+          "배경/사인물/스탠드 등 현장 연출 옵션",
+          "데이터 리포트(촬영 수·피크타임) 제공",
         ].map((txt, i) => (
           <li key={i} className="flex items-start gap-3">
             <CheckCircle2 className="w-5 h-5 text-pink-600 mt-0.5" />
