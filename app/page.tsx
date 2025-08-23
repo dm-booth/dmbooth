@@ -188,17 +188,17 @@ export default function HomePage() {
             {/* 웨딩 섹션: 작은 가로형 이미지 3개 */}
             <div className="flex gap-2 sm:gap-4 mt-6">
               <img
-                src="/images/wedding-side1.jpg"
+                src="/wedding-side1.jpg"
                 alt="웨딩 보조이미지 1"
                 className="w-24 h-16 sm:w-28 sm:h-20 object-cover rounded-lg shadow"
               />
               <img
-                src="/images/wedding-side2.jpg"
+                src="/wedding-side2.jpg"
                 alt="웨딩 보조이미지 2"
                 className="w-24 h-16 sm:w-28 sm:h-20 object-cover rounded-lg shadow"
               />
               <img
-                src="/images/wedding-side3.jpg"
+                src="/wedding-side3.jpg"
                 alt="웨딩 보조이미지 3"
                 className="w-24 h-16 sm:w-28 sm:h-20 object-cover rounded-lg shadow"
               />
