@@ -243,7 +243,7 @@ export default function HomePage() {
             {Array.from({ length: 9 }).map((_, i) => (
               <div key={i} className="overflow-hidden rounded-2xl bg-gray-100 aspect-[3/2]">
                 <img
-                  src={`/images/${i + 1}.jpg`}       // ← 경로 수정 완료
+                  src={`/images${i + 1}.jpg`}       // ← 경로 수정 완료
                   alt={`현장사진 ${i + 1}`}
                   className="w-full h-full object-cover hover:scale-105 transition"
                 />
