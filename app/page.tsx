@@ -185,7 +185,6 @@ export default function HomePage() {
               ))}
             </ul>
 
-            
             {/* 웨딩 섹션: 작은 가로형 이미지 3개 */}
 <div className="flex gap-3 sm:gap-6 mt-6 justify-center">
   <img
@@ -231,10 +230,9 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
-
             
                   {/* 팝업 섹션: 작은 가로형 이미지 3개 */}
-      <div className="flex gap-3 sm:gap-6 mt-6 md:mt-auto justify-center">
+      <div className="flex gap-3 sm:gap-6 mt-10 md:mt-auto justify-center">
         <img src="/popup-side1.jpg" alt="팝업 보조이미지 1" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
         <img src="/popup-side2.jpg" alt="팝업 보조이미지 2" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
         <img src="/popup-side3.jpg" alt="팝업 보조이미지 3" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
