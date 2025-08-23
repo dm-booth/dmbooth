@@ -143,7 +143,7 @@ export default function HomePage() {
       <section id="wedding" className="py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
           <div className="aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100">
-            <img src="/images/wedding-hero.jpg" alt="웨딩 포토부스 샘플" className="w-full h-full object-cover" />
+            <img src="/images/wedding-main.jpg" alt="웨딩 포토부스 샘플" className="w-full h-full object-cover" />
           </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">웨딩</h2>
@@ -170,7 +170,7 @@ export default function HomePage() {
       <section id="popup" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
           <div className="aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100">
-            <img src="/images/popup-hero.jpg" alt="팝업/프로모션 포토부스 샘플" className="w-full h-full object-cover" />
+            <img src="/images/popup-main.jpg" alt="팝업/프로모션 포토부스 샘플" className="w-full h-full object-cover" />
           </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">팝업</h2>
