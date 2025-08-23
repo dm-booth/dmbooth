@@ -150,11 +150,11 @@ export default function HomePage() {
             <p className="text-gray-600 mt-3">순백/모던/빈티지 컨셉에 맞춘 추천 구성.</p>
             <ul className="mt-6 space-y-3">
               {[
-                "스태프2인 · 무제한 인화",
-                "웨딩 방명록 · 액자 · 스티커 제공",
-                "하객 대기 최소화 운영(고사양 장비)",
-                "로고/초성/컬러 완전 커스터마이징",
-                "다양한 촬영소품 · 원본파일 제공",
+                "✅스태프2인 · 무제한 인화",
+                "✅웨딩 방명록 · 액자 · 스티커 제공",
+                "✅하객 대기 최소화 운영(고사양 장비)",
+                "✅로고/초성/컬러 완전 커스터마이징",
+                "✅다양한 촬영소품 · 원본파일 제공",
               ].map((txt, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-pink-600 mt-0.5" />
@@ -162,6 +162,22 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
+            <div className="flex gap-2 sm:gap-4 mt-6">
+  <img
+    src="/images/wedding-side1.jpg"
+    alt="웨딩 보조이미지 1"
+    className="w-24 h-16 sm:w-28 sm:h-20 object-cover rounded-lg shadow"
+  />
+  <img
+    src="/images/wedding-side2.jpg"
+    alt="웨딩 보조이미지 2"
+    className="w-24 h-16 sm:w-28 sm:h-20 object-cover rounded-lg shadow"
+  />
+  <img
+    src="/images/wedding-side3.jpg"
+    alt="웨딩 보조이미지 3"
+    className="w-24 h-16 sm:w-28 sm:h-20 object-cover rounded-lg shadow"
+  />
           </div>
         </div>
       </section>
