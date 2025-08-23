@@ -210,10 +210,10 @@ export default function HomePage() {
 
       {/* Popup — 좌측 큰 사진 + 우측 목록 */}
       <section id="popup" className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-stretch">
           <div className="aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100">
             <img src="/popup-main.jpg" alt="팝업/프로모션 포토부스 샘플" className="w-full h-full object-cover" />
-          </div>
+          <div className="flex flex-col h-full">
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">팝업</h2>
             <p className="text-gray-600 mt-3">브랜드 프로모션/체험형 이벤트에 최적화.</p>
@@ -232,7 +232,7 @@ export default function HomePage() {
             </ul>
             
                   {/* 팝업 섹션: 작은 가로형 이미지 3개 */}
-      <div className="flex gap-3 sm:gap-6 mt-10 md:mt-auto justify-center">
+      <div className="flex gap-3 sm:gap-6 mt-6 md:mt-auto md:pt-6 justify-center md:justify-start">
         <img src="/popup-side1.jpg" alt="팝업 보조이미지 1" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
         <img src="/popup-side2.jpg" alt="팝업 보조이미지 2" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
         <img src="/popup-side3.jpg" alt="팝업 보조이미지 3" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
