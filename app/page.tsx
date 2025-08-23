@@ -208,39 +208,44 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Popup — 좌측 큰 사진 + 우측 목록 */}
-      <section id="popup" className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-stretch">
-          <div className="aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100">
-            <img src="/popup-main.jpg" alt="팝업/프로모션 포토부스 샘플" className="w-full h-full object-cover" />
-          <div className="flex flex-col h-full">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">팝업</h2>
-            <p className="text-gray-600 mt-3">브랜드 프로모션/체험형 이벤트에 최적화.</p>
-            <ul className="mt-6 space-y-3">
-              {[
-                "브랜딩 템플릿 2종 · 로고/폰트/메시지 반영",
-                "QR 다운로드 · SNS 업로드 유도 문구",
-                "배경/사인물/스탠드 등 현장 연출 옵션",
-                "데이터 리포트(촬영 수·피크타임) 제공",
-              ].map((txt, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-pink-600 mt-0.5" />
-                  <span className="text-gray-800">{txt}</span>
-                </li>
-              ))}
-            </ul>
-            
-                  {/* 팝업 섹션: 작은 가로형 이미지 3개 */}
+     {/* Popup — 좌측 큰 사진 + 우측 목록 */}
+<section id="popup" className="py-20 bg-gray-50">
+  <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-stretch">
+    
+    {/* 좌측 큰 이미지 */}
+    <div className="aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100">
+      <img src="/popup-main.jpg" alt="팝업/프로모션 포토부스 샘플" className="w-full h-full object-cover" />
+    </div>
+
+    {/* 우측 텍스트 + 보조 이미지 */}
+    <div className="flex flex-col h-full">
+      <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">팝업</h2>
+      <p className="text-gray-600 mt-3">브랜드 프로모션/체험형 이벤트에 최적화.</p>
+
+      <ul className="mt-6 space-y-3">
+        {[
+          "✅브랜딩 템플릿 2종 · 로고/폰트/메시지 반영",
+          "✅QR 다운로드 · SNS 업로드 유도 문구",
+          "✅배경/사인물/스탠드 등 현장 연출 옵션",
+          "✅데이터 리포트(촬영 수·피크타임) 제공",
+        ].map((txt, i) => (
+          <li key={i} className="flex items-start gap-3">
+            <CheckCircle2 className="w-5 h-5 text-pink-600 mt-0.5" />
+            <span className="text-gray-800">{txt}</span>
+          </li>
+        ))}
+      </ul>
+
+      {/* 팝업 섹션: 작은 가로형 이미지 3개 */}
       <div className="flex gap-3 sm:gap-6 mt-6 md:mt-auto md:pt-6 justify-center md:justify-start">
         <img src="/popup-side1.jpg" alt="팝업 보조이미지 1" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
         <img src="/popup-side2.jpg" alt="팝업 보조이미지 2" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
         <img src="/popup-side3.jpg" alt="팝업 보조이미지 3" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
       </div>
+    </div>
+  </div>
+</section>
 
-          </div>
-        </div>
-      </section>
 
       {/* Gallery */}
       <section id="gallery" className="py-20">
