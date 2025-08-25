@@ -1,4 +1,5 @@
 import React from "react";
+import type { Metadata } from "next";
 import {
   Camera,
   Sparkles,
@@ -10,6 +11,31 @@ import {
   Instagram,
   CheckCircle2,
 } from "lucide-react";
+export const metadata: Metadata = {
+  title: "웨딩·이벤트 포토부스 | 디엠부스 DM BOOTH",
+  description:
+    "웨딩·기업행사·학교축제 전문 포토부스. 가을 이벤트 35만원~, 대표 직영 진행, 고품질 인화·방명록·템플릿 커스터마이징, 빠른 설치·전국 진행.",
+  keywords: [
+    "웨딩 포토부스",
+    "행사 포토부스",
+    "이벤트 포토부스",
+    "기업행사 포토부스",
+    "학교 축제 포토부스",
+    "팝업스토어 포토부스",
+    "디엠부스",
+    "DM BOOTH",
+  ],
+  openGraph: {
+    title: "웨딩·이벤트 포토부스 | 디엠부스 DM BOOTH",
+    description:
+      "웨딩·기업행사·학교축제 전문 포토부스. 가을 이벤트 35만원~, 대표 직영 진행, 고품질 인화·방명록·템플릿 커스터마이징.",
+    url: "https://dmbooth.kr",
+    siteName: "DM BOOTH",
+    locale: "ko_KR",
+    type: "website",
+    images: [{ url: "/og-image.jpg" }],
+  },
+};
 
 // DM BOOTH — Landing Page (Wedding/Popup added)
 export default function HomePage() {
@@ -50,7 +76,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-br from-pink-100 via-white to-blue-100" />
         <div className="relative max-w-6xl mx-auto px-6 py-28 text-center">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black text-white text-xs font-semibold mb-8">
-            <Sparkles className="w-3.5 h-3.5" /> Summer Event ~ 8/31
+            <Sparkles className="w-3.5 h-3.5" /> Autumn Event ~ 11/31
           </span>
           <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight">
             사진은 순간을 남기고,<br /> <span className="text-pink-600">디엠부스</span>는 그 순간을 완성합니다.
@@ -276,7 +302,7 @@ export default function HomePage() {
               <p className="text-gray-600 mt-3">행사 규모와 시간에 따라 맞춤 견적을 드립니다. (부가세 별도)</p>
             </div>
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-100 text-pink-700 text-xs font-bold">
-              여름 이벤트 ~ 8/31 · 33만원 특가(조건부)
+              가을 이벤트 ~ 11/31 · 35만원 특가(조건부)
             </span>
           </div>
 
@@ -285,7 +311,7 @@ export default function HomePage() {
               name="웨딩/기업 EVENT"
               price="₩350,000~"
               highlight
-              bullets={["상시 이벤트", "1.5시간 진행", "현장 스태프 2명", "방명록&액자 제공", "맞춤 템플릿 1종"]}
+              bullets={["가을 이벤트", "1.5시간 진행", "현장 스태프 2명", "방명록&액자 제공", "맞춤 템플릿 1종"]}
               cta="상담 요청"
             />
             <PriceCard
