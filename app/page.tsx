@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "웨딩·이벤트 포토부스 | 디엠부스 DM BOOTH",
   description:
-    "웨딩·기업행사·학교축제 전문 포토부스. 가을 이벤트 35만원~, 대표 직영 진행, 고품질 인화·방명록·템플릿 커스터마이징, 빠른 설치·전국 진행.",
+    "웨딩·기업행사·학교축제 전문 포토부스. 가을 이벤트 35만원~, 대표 현장 진행, 고품질 인화·방명록·템플릿 커스터마이징, 빠른 설치·전국 진행.",
   keywords: [
     "웨딩 포토부스",
     "행사 포토부스",
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "웨딩·이벤트 포토부스 | 디엠부스 DM BOOTH",
     description:
-      "웨딩·기업행사·학교축제 전문 포토부스. 가을 이벤트 35만원~, 대표 직영 진행, 고품질 인화·방명록·템플릿 커스터마이징.",
+      "웨딩·기업행사·학교축제 전문 포토부스. 가을 이벤트 35만원~, 대표 현장 진행, 고품질 인화·방명록·템플릿 커스터마이징.",
     url: "https://dmbooth.kr",
     siteName: "DM BOOTH",
     locale: "ko_KR",
     type: "website",
-    images: [{ url: "/og-image.jpg" }],
+    images: [{ url: "/og-main.jpg" }],
   },
 };
 
