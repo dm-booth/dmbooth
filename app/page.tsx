@@ -33,7 +33,13 @@ export const metadata: Metadata = {
     siteName: "DM BOOTH",
     locale: "ko_KR",
     type: "website",
-    images: [{ url: "/og-main.jpg" }],
+    images: [{ 
+       url: "https://dmbooth.kr/og-main.png", // ✅og(미리보기나오는이미지) 절대경로 + 확장자 확인
+       width: 1200,
+       height: 630,
+       alt: "DM BOOTH 대표 이미지",
+     }],
+
   },
 };
 
