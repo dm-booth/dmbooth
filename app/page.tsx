@@ -46,15 +46,19 @@ export const metadata: Metadata = {
 // DM BOOTH — Landing Page (Wedding/Popup added)
 function FaqHtml({ q, a }: { q: string; a: string }) {
   return (
-    <details className="group rounded-xl bg-white p-4 shadow-sm">
-      <summary className="cursor-pointer font-semibold">{q}</summary>
+    <details className="group rounded-2xl border bg-white p-5 hover:bg-gray-50">
+      <summary className="cursor-pointer list-none flex items-center justify-between font-semibold [&::-webkit-details-marker]:hidden">
+        <span>{q}</span>
+        <span className="text-gray-400 group-open:rotate-180 transition">▾</span>
+      </summary>
       <div
-        className="mt-3 text-gray-600"
+        className="mt-3 text-sm text-gray-700 leading-relaxed"
         dangerouslySetInnerHTML={{ __html: a }}
       />
     </details>
   );
 }
+
 
 export default function HomePage() {
   return (
