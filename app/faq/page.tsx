@@ -1,14 +1,12 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "포토부스 자주 묻는 질문 | DM BOOTH",
-  description:
-    "대여 비용, 설치 공간/전기, 출력 수량, 예약 시기 등 DM BOOTH 포토부스 FAQ.",
+  description: "대여 비용, 설치 공간/전기, 출력 수량, 예약 시기 등 DM BOOTH 포토부스 FAQ.",
   openGraph: {
     url: "/faq",
     title: "포토부스 자주 묻는 질문 | DM BOOTH",
-    description:
-      "비용, 공간/전기, 출력 수량, 예약 시기 등 핵심 FAQ 모음.",
+    description: "비용, 공간/전기, 출력 수량, 예약 시기 등 핵심 FAQ 모음.",
     images: ["/og-main.png"],
   },
   alternates: { canonical: "https://dmbooth.kr/faq" },
@@ -22,10 +20,7 @@ function JsonLd() {
       {
         "@type": "Question",
         name: "설치에 필요한 공간/전기는?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "2×2m 권장, 220V 콘센트 1구면 충분합니다.",
-        },
+        acceptedAnswer: { "@type": "Answer", text: "2×2m 권장, 220V 콘센트 1구면 충분합니다." },
       },
       {
         "@type": "Question",
@@ -34,58 +29,38 @@ function JsonLd() {
           "@type": "Answer",
           text:
             "기본 시간은 1시간 30분(1.5시간)이며, 이 경우 출력은 무제한으로 제공합니다. " +
-            "만약 3시간 이상 행사로 진행하실 경우 기본 800장을 기준으로 하며, 이후부터는 필름 추가 비용이 발생합니다. " +
-            "다만 실제 운영 경험상 3시간 정도 꾸준히 사람이 몰려도 800장을 모두 소진하기는 어렵습니다. " +
-            "따라서 대부분의 행사에서는 기본 제공량만으로도 충분히 이용 가능합니다.",
+            "행사를 2시간 이상으로 진행하실 경우에는 기본 800장을 기준으로 하며, 이후부터는 필름 추가 비용이 발생합니다. " +
+            "실제 운영 경험상 3시간 동안 꾸준히 사람이 몰려도 800장을 모두 소진하기는 어려웠습니다. " +
+            "대부분의 웨딩·기업 행사에서는 기본 제공량만으로 충분히 이용 가능합니다.",
         },
       },
       {
         "@type": "Question",
         name: "예약은 얼마나 전에 해야 하나요?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "한 달 전 권장. 급한 일정도 문의 주시면 가능 여부 안내드립니다.",
-        },
+        acceptedAnswer: { "@type": "Answer", text: "한 달 전 권장. 급한 일정도 문의 주시면 가능 여부 안내드립니다." },
       },
       {
         "@type": "Question",
         name: "템플릿 디자인은 어떻게 진행되나요?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "컨셉/컬러 공유 → 시안 제공 → 수정 반영 후 확정합니다.",
-        },
+        acceptedAnswer: { "@type": "Answer", text: "컨셉/컬러 공유 → 시안 제공 → 수정 반영 후 확정합니다." },
       },
     ],
   };
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }}
-    />
-  );
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }} />;
 }
 
 export default function Page() {
-  const qa = [
-    [
-      "설치에 필요한 공간/전기는?",
-      "2×2m 권장, 220V 콘센트 1구면 충분합니다.",
-    ],
+  const qa: [string, string][] = [
+    ["설치에 필요한 공간/전기는?", "2×2m 권장, 220V 콘센트 1구면 충분합니다."],
     [
       "기본 시간과 출력 수량은 어떻게 되나요?",
-      `기본 시간은 1시간 30분(1.5시간)이며, 이 경우 출력은 무제한으로 제공됩니다. 
-       만약 3시간 이상 행사로 진행하실 경우 기본 800장을 기준으로 하며, 이후부터는 필름 추가 비용이 발생합니다. 
-       실제 운영 경험상 3시간 동안 꾸준히 사람이 몰려도 800장을 모두 사용하는 경우는 드뭅니다. 
+      `기본 시간은 1시간 30분(1.5시간)이며, 이 경우 출력은 무제한으로 제공됩니다.
+       행사를 2시간 이상으로 진행하실 경우에는 기본 800장을 기준으로 하며, 이후부터는 필름 추가 비용이 발생합니다.
+       실제 운영 경험상 3시간 동안 꾸준히 사람이 몰려도 800장을 모두 사용하는 경우는 드뭅니다.
        그래서 대부분의 웨딩·기업 행사에서는 기본 제공량만으로 충분히 즐기실 수 있습니다.`,
     ],
-    [
-      "예약은 얼마나 전에 해야 하나요?",
-      "한 달 전 권장. 급한 일정도 문의 주시면 가능 여부를 안내드립니다.",
-    ],
-    [
-      "템플릿 디자인은 어떻게 진행되나요?",
-      "컨셉/컬러 공유 → 시안 제공 → 수정 반영 후 확정합니다.",
-    ],
+    ["예약은 얼마나 전에 해야 하나요?", "한 달 전 권장. 급한 일정도 문의 주시면 가능 여부를 안내드립니다."],
+    ["템플릿 디자인은 어떻게 진행되나요?", "컨셉/컬러 공유 → 시안 제공 → 수정 반영 후 확정합니다."],
   ];
 
   return (
