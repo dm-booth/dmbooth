@@ -1,7 +1,3 @@
-알겠어. 헷갈리지 않게 **전체 파일을 ‘문단 내리기 전(원본 스타일)’** 로 싹 되돌린 버전 그대로 줄게.
-아래 코드를 **파일 전체 교체**하면 끝이야. (`FaqHtml` 제거, FAQ는 전부 `<Faq />`만 사용)
-
-```tsx
 import React from "react";
 import type { Metadata } from "next";
 import {
