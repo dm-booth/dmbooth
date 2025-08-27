@@ -3,41 +3,33 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: {
-    default: "DM BOOTH — 디엠부스",
-    template: "%s | DM BOOTH",
-  },
-  description: "모든 이벤트에 최적화된 프리미엄 포토부스",
   metadataBase: new URL("https://dmbooth.kr"),
+  title: { default: "DM BOOTH - 웨딩·기업 행사 프리미엄 포토부스", template: "%s | DM BOOTH" },
+  description:
+    "웨딩, 기업행사, 축제 어디든 완벽한 프리미엄 포토부스! 맞춤 템플릿과 방명록 제공, 대표의 현장 진행으로 최고의 만족을 선사합니다.",
   openGraph: {
-    title: "DM BOOTH — 디엠부스",
-    description: "모든 이벤트에 최적화된 프리미엄 포토부스",
-    url: "https://dmbooth.kr",
-    siteName: "DM BOOTH",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "DM BOOTH" }], // public/og.jpg 업로드 권장
     type: "website",
+    url: "/",
+    siteName: "DM BOOTH",
+    title: "DM BOOTH - 웨딩·기업 행사 프리미엄 포토부스",
+    description:
+      "웨딩, 기업행사, 축제 어디든 완벽한 프리미엄 포토부스! 맞춤 템플릿, 방명록 제공, 대표의 현장 진행.",
+    images: ["/og-main.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DM BOOTH — 디엠부스",
-    description: "모든 이벤트에 최적화된 프리미엄 포토부스",
-    images: ["/og.jpg"],
+    title: "DM BOOTH - 웨딩·기업 행사 프리미엄 포토부스",
+    description: "웨딩, 기업행사, 축제 어디든 완벽!",
+    images: ["/og-main.png"],
   },
-  icons: { icon: "/favicon.ico" }, // 있으면 사용
+  alternates: { canonical: "https://dmbooth.kr/" },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <head>
-        <meta
-          name="naver-site-verification"
-          content="793e2a0b6925f3c950dee0195d9be8523983677c"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://dmbooth.kr" />
-      </head>
-      <body className="bg-white text-gray-900">{children}</body>
+      <body className="min-h-screen">{children}</body>
     </html>
   );
 }
