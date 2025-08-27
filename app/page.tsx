@@ -365,6 +365,18 @@ export default function HomePage() {
         </div>
       </section>
 
+function FaqHtml({ q, a }: { q: string; a: string }) {
+  return (
+    <details className="group rounded-xl bg-white p-4 shadow-sm">
+      <summary className="cursor-pointer font-semibold">{q}</summary>
+      <div
+        className="mt-3 text-gray-600"
+        dangerouslySetInnerHTML={{ __html: a }}
+      />
+    </details>
+  );
+}
+
       {/* FAQ */}
       <section id="faq" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
@@ -372,16 +384,12 @@ export default function HomePage() {
           <div className="mt-8 space-y-3">
             <Faq q="설치에 필요한 공간/전기는?" a="공간 2x2m 권장, 반경 10m 이내 220V 콘센트 1구면 충분합니다. 연장선은 저희가 준비합니다 :)" />
             <Faq q="현장 인원은 몇 명이 오나요?" a="행사 규모에 따라 1~2명이 상주하며 촬영 유도와 동선을 리드합니다." />
-            <Faq 
+            <FaqHtml
   q="기본 시간과 출력 수량은 어떻게 되나요?"
-  a={
-    <>
-      <p>기본 시간은 1시간 30분(1.5시간)이며, 이 경우 출력은 무제한으로 제공됩니다.</p>
-      <p>행사를 3시간 이상으로 진행하실 경우에는 기본 800장을 기준으로 하며, 이후부터는 필름 추가 비용이 발생합니다.</p>
-      <p>실제 운영 경험상 3시간 동안 꾸준히 사람이 몰려도 800장을 모두 사용하는 경우는 드뭅니다.</p>
-      <p>그래서 대부분의 웨딩·기업 행사에서는 기본 제공량만으로 충분히 즐기실 수 있습니다.</p>
-    </>
-  }
+  a="기본 시간은 1시간 30분(1.5시간)이며, 이 경우 출력은 무제한으로 제공됩니다.<br />
+     행사를 2시간 이상으로 진행하실 경우에는 기본 800장을 기준으로 하며, 이후부터는 필름 추가 비용이 발생합니다.<br />
+     실제 운영 경험상 3시간 동안 꾸준히 사람이 몰려도 800장을 모두 사용하는 경우는 드뭅니다.<br />
+     그래서 대부분의 웨딩·기업 행사에서는 기본 제공량만으로 충분히 즐기실 수 있습니다."
 />
             <Faq q="예약은 얼마나 전에 해야 하나요?" a="한 달 전 권장. 급한 일정도 문의 주시면 가능 여부를 안내드립니다." />
             <Faq q="템플릿 디자인은 어떻게 진행되나요?" a="행사 컨셉/컬러/로고/문구를 받아 1:1 맞춤으로 제작, 사전 확정 후 진행합니다." />
