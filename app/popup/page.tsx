@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "기업·축제 포토부스 - 이벤트 전문 | DM BOOTH",
@@ -43,13 +43,10 @@ export default function Page() {
     <main className="mx-auto max-w-6xl px-4 py-14 space-y-14">
       <JsonLd />
 
-      {/* Hero */}
       <section className="grid md:grid-cols-2 gap-6 items-center">
         <div>
           <h1 className="text-3xl md:text-4xl font-extrabold">기업·축제 포토부스</h1>
-          <p className="text-gray-600 mt-2">
-            브랜딩 커스텀 · 빠른 회전 · 안정적인 운영
-          </p>
+          <p className="text-gray-600 mt-2">브랜딩 커스텀 · 빠른 회전 · 안정적인 운영</p>
           <a href="/#contact" className="inline-block mt-4 px-6 py-3 rounded-2xl bg-black text-white">
             행사 상담하기
           </a>
@@ -57,7 +54,6 @@ export default function Page() {
         <img src="/images/popup-hero.jpg" alt="기업/축제 포토부스" className="w-full rounded-2xl shadow" />
       </section>
 
-      {/* Features */}
       <section className="grid md:grid-cols-3 gap-6">
         {[
           ["브랜딩", "로고·배너·필름 템플릿 커스텀"],
@@ -71,5 +67,20 @@ export default function Page() {
         ))}
       </section>
 
-      {/* Use cases */}
-      <sectio
+      <section>
+        <h2 className="font-semibold text-lg mb-3">현장 스냅</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          {["p1.jpg","p2.jpg","p3.jpg","p4.jpg","p5.jpg","p6.jpg"].map(f=>(
+            <img key={f} src={`/images/popup/${f}`} alt="행사 현장 사진" className="rounded-xl border" />
+          ))}
+        </div>
+      </section>
+
+      <section className="flex gap-3">
+        <a className="underline text-sm" href="/review">후기 보기</a>
+        <a className="underline text-sm" href="/faq">FAQ</a>
+        <a className="underline text-sm" href="/">홈으로</a>
+      </section>
+    </main>
+  );
+}
