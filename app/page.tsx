@@ -44,6 +44,18 @@ export const metadata: Metadata = {
 };
 
 // DM BOOTH — Landing Page (Wedding/Popup added)
+function FaqHtml({ q, a }: { q: string; a: string }) {
+  return (
+    <details className="group rounded-xl bg-white p-4 shadow-sm">
+      <summary className="cursor-pointer font-semibold">{q}</summary>
+      <div
+        className="mt-3 text-gray-600"
+        dangerouslySetInnerHTML={{ __html: a }}
+      />
+    </details>
+  );
+}
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
@@ -364,17 +376,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-function FaqHtml({ q, a }: { q: string; a: string }) {
-  return (
-    <details className="group rounded-xl bg-white p-4 shadow-sm">
-      <summary className="cursor-pointer font-semibold">{q}</summary>
-      <div
-        className="mt-3 text-gray-600"
-        dangerouslySetInnerHTML={{ __html: a }}
-      />
-    </details>
-  );
 }
 
       {/* FAQ */}
