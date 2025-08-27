@@ -1,3 +1,7 @@
+알겠어. 헷갈리지 않게 **전체 파일을 ‘문단 내리기 전(원본 스타일)’** 로 싹 되돌린 버전 그대로 줄게.
+아래 코드를 **파일 전체 교체**하면 끝이야. (`FaqHtml` 제거, FAQ는 전부 `<Faq />`만 사용)
+
+```tsx
 import React from "react";
 import type { Metadata } from "next";
 import {
@@ -11,6 +15,7 @@ import {
   Instagram,
   CheckCircle2,
 } from "lucide-react";
+
 export const metadata: Metadata = {
   title: "웨딩·이벤트 포토부스 | 디엠부스 DM BOOTH",
   description:
@@ -33,32 +38,16 @@ export const metadata: Metadata = {
     siteName: "DM BOOTH",
     locale: "ko_KR",
     type: "website",
-    images: [{ 
-       url: "https://dmbooth.kr/og-main.png", // ✅og(미리보기나오는이미지) 절대경로 + 확장자 확인
-       width: 1200,
-       height: 630,
-       alt: "DM BOOTH 대표 이미지",
-     }],
-
+    images: [
+      {
+        url: "https://dmbooth.kr/og-main.png",
+        width: 1200,
+        height: 630,
+        alt: "DM BOOTH 대표 이미지",
+      },
+    ],
   },
 };
-
-// DM BOOTH — Landing Page (Wedding/Popup added)
-function FaqHtml({ q, a }: { q: string; a: string }) {
-  return (
-    <details className="group rounded-2xl border bg-white p-5 hover:bg-gray-50">
-      <summary className="cursor-pointer list-none flex items-center justify-between font-semibold [&::-webkit-details-marker]:hidden">
-        <span>{q}</span>
-        <span className="text-gray-400 group-open:rotate-180 transition">▾</span>
-      </summary>
-      <div
-        className="mt-3 text-sm text-gray-700 leading-relaxed"
-        dangerouslySetInnerHTML={{ __html: a }}
-      />
-    </details>
-  );
-}
-
 
 export default function HomePage() {
   return (
@@ -192,11 +181,9 @@ export default function HomePage() {
               { src: "/custom-4cut.png", name: "커스텀드로잉 4컷" },
             ].map((t, i) => (
               <div key={i} className="group overflow-hidden rounded-2xl border bg-white">
-                {/* 이미지 박스 */}
                 <div className="aspect-[2/3] bg-gray-100 flex items-center justify-center p-2">
                   <img src={t.src} alt={t.name} className="max-h-full max-w-full object-contain" loading="lazy" />
                 </div>
-                {/* 하단 텍스트 */}
                 <div className="p-4 flex items-center justify-between">
                   <span className="font-semibold">{t.name}</span>
                   <span className="text-xs px-2 py-1 rounded-full bg-gray-100">커스텀 가능</span>
@@ -233,67 +220,60 @@ export default function HomePage() {
               ))}
             </ul>
 
-            {/* 웨딩 섹션: 작은 가로형 이미지 3개 */}
-<div className="flex gap-3 sm:gap-6 mt-6 justify-center">
-  <img
-    src="/wedding-side1.jpg"
-    alt="웨딩 보조이미지 1"
-    className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow"
-  />
-  <img
-    src="/wedding-side2.jpg"
-    alt="웨딩 보조이미지 2"
-    className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow"
-  />
-  <img
-    src="/wedding-side3.jpg"
-    alt="웨딩 보조이미지 3"
-    className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow"
-  />
-</div>
-
+            <div className="flex gap-3 sm:gap-6 mt-6 justify-center">
+              <img
+                src="/wedding-side1.jpg"
+                alt="웨딩 보조이미지 1"
+                className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow"
+              />
+              <img
+                src="/wedding-side2.jpg"
+                alt="웨딩 보조이미지 2"
+                className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow"
+              />
+              <img
+                src="/wedding-side3.jpg"
+                alt="웨딩 보조이미지 3"
+                className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-     {/* Popup — 좌측 큰 사진 + 우측 목록 */}
-<section id="popup" className="py-20 bg-gray-50">
-  <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
-    
-    {/* 좌측 큰 이미지 */}
-    <div className="aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100">
-      <img src="/popup-main.jpg" alt="팝업/프로모션 포토부스 샘플" className="w-full h-full object-cover" />
-    </div>
+      {/* Popup — 좌측 큰 사진 + 우측 목록 */}
+      <section id="popup" className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+          <div className="aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100">
+            <img src="/popup-main.jpg" alt="팝업/프로모션 포토부스 샘플" className="w-full h-full object-cover" />
+          </div>
 
-    {/* 우측 텍스트 + 보조 이미지 */}
-    <div>
-      <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">팝업</h2>
-      <p className="text-gray-600 mt-3">브랜드 프로모션/체험형 이벤트에 최적화.</p>
+          <div>
+            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">팝업</h2>
+            <p className="text-gray-600 mt-3">브랜드 프로모션/체험형 이벤트에 최적화.</p>
 
-      <ul className="mt-6 space-y-3">
-        {[
-          "브랜딩 템플릿 2종 · 로고/폰트/메시지 반영",
-          "QR 다운로드 · SNS 업로드 유도 문구",
-          "배경/사인물/스탠드 등 현장 연출 옵션",
-          "데이터 리포트(촬영 수·피크타임) 제공",
-        ].map((txt, i) => (
-          <li key={i} className="flex items-start gap-3">
-            <CheckCircle2 className="w-5 h-5 text-pink-600 mt-0.5" />
-            <span className="text-gray-800">{txt}</span>
-          </li>
-        ))}
-      </ul>
+            <ul className="mt-6 space-y-3">
+              {[
+                "브랜딩 템플릿 2종 · 로고/폰트/메시지 반영",
+                "QR 다운로드 · SNS 업로드 유도 문구",
+                "배경/사인물/스탠드 등 현장 연출 옵션",
+                "데이터 리포트(촬영 수·피크타임) 제공",
+              ].map((txt, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-pink-600 mt-0.5" />
+                  <span className="text-gray-800">{txt}</span>
+                </li>
+              ))}
+            </ul>
 
-      {/* 팝업 섹션: 작은 가로형 이미지 3개 */}
-      <div className="flex gap-3 sm:gap-6 mt-6 justify-center">
-        <img src="/popup-side1.jpg" alt="팝업 보조이미지 1" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
-        <img src="/popup-side2.jpg" alt="팝업 보조이미지 2" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
-        <img src="/popup-side3.jpg" alt="팝업 보조이미지 3" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
-      </div>
-    </div>
-  </div>
-</section>
-
+            <div className="flex gap-3 sm:gap-6 mt-6 justify-center">
+              <img src="/popup-side1.jpg" alt="팝업 보조이미지 1" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
+              <img src="/popup-side2.jpg" alt="팝업 보조이미지 2" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
+              <img src="/popup-side3.jpg" alt="팝업 보조이미지 3" className="w-28 h-20 sm:w-40 sm:h-28 md:w-52 md:h-36 object-cover rounded-lg shadow" />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Gallery */}
       <section id="gallery" className="py-20">
@@ -305,7 +285,7 @@ export default function HomePage() {
             {Array.from({ length: 9 }).map((_, i) => (
               <div key={i} className="overflow-hidden rounded-2xl bg-gray-100 aspect-[3/2]">
                 <img
-                  src={`/images${i + 1}.jpg`}       // ← 경로 수정 완료
+                  src={`/images${i + 1}.jpg`}
                   alt={`현장사진 ${i + 1}`}
                   className="w-full h-full object-cover hover:scale-105 transition"
                 />
@@ -381,20 +361,14 @@ export default function HomePage() {
         </div>
       </section>
 
-            {/* FAQ */}
+      {/* FAQ (원래 스타일) */}
       <section id="faq" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">📍자주 묻는 질문</h2>
           <div className="mt-8 space-y-3">
             <Faq q="설치에 필요한 공간/전기는?" a="공간 2x2m 권장, 반경 10m 이내 220V 콘센트 1구면 충분합니다. 연장선은 저희가 준비합니다 :)" />
             <Faq q="현장 인원은 몇 명이 오나요?" a="행사 규모에 따라 1~2명이 상주하며 촬영 유도와 동선을 리드합니다." />
-            <FaqHtml
-              q="기본 시간과 출력 수량은 어떻게 되나요?"
-              a={`기본 시간은 1시간 30분(1.5시간)이며, 이 경우 출력은 무제한으로 제공됩니다.<br />
-                 행사를 2시간 이상으로 진행하실 경우에는 기본 800장을 기준으로 하며, 이후부터는 필름 추가 비용이 발생합니다.<br />
-                 실제 운영 경험상 3시간 동안 꾸준히 사람이 몰려도 800장을 모두 사용하는 경우는 드뭅니다.<br />
-                 그래서 대부분의 웨딩·기업 행사에서는 기본 제공량만으로 충분히 즐기실 수 있습니다.`}
-            />
+            <Faq q="기본 시간과 출력 수량은 어떻게 되나요?" a="기본 시간은 1시간 30분(1.5시간)이며 출력은 무제한으로 제공됩니다. 3시간 이상 진행 시 기본 800장 기준이며 이후에는 필름 추가 비용이 발생합니다. 실제 운영 경험상 3시간 동안 꾸준히 사람이 몰려도 800장을 모두 사용하는 경우는 드뭅니다. 그래서 대부분의 웨딩·기업 행사에서는 기본 제공량만으로 충분히 즐기실 수 있습니다." />
             <Faq q="예약은 얼마나 전에 해야 하나요?" a="한 달 전 권장. 급한 일정도 문의 주시면 가능 여부를 안내드립니다." />
             <Faq q="템플릿 디자인은 어떻게 진행되나요?" a="행사 컨셉/컬러/로고/문구를 받아 1:1 맞춤으로 제작, 사전 확정 후 진행합니다." />
           </div>
@@ -453,8 +427,10 @@ export default function HomePage() {
   );
 }
 
-// ——————————————————————————————
-// 재사용 컴포넌트
+/* —————————————————————————————
+   재사용 컴포넌트 (원본 유지)
+————————————————————————————— */
+
 function Card({
   title,
   icon,
