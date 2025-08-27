@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "포토부스 후기 - 실제 고객 이야기 | DM BOOTH",
@@ -7,8 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: "/review",
     title: "포토부스 후기 - 실제 고객 이야기 | DM BOOTH",
-    description:
-      "웨딩·기업·축제 후기 모음. 현장 만족도를 확인하세요.",
+    description: "웨딩·기업·축제 후기 모음. 현장 만족도를 확인하세요.",
     images: ["/og-main.png"],
   },
   alternates: { canonical: "https://dmbooth.kr/review" },
@@ -18,27 +17,16 @@ function JsonLd() {
   const itemList = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, url: "https://dmbooth.kr/review" },
-    ],
+    itemListElement: [{ "@type": "ListItem", position: 1, url: "https://dmbooth.kr/review" }],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />;
 }
 
 export default function Page() {
   const reviews = [
-    {
-      name: "웨딩 K&S",
-      text: "하객들이 너무 좋아했어요. 방명록 퀄리티 최고!",
-    },
-    {
-      name: "기업 세미나",
-      text: "브랜딩 맞춤이 깔끔했습니다. 현장 진행도 매끄러웠어요.",
-    },
-    {
-      name: "학교 축제",
-      text: "대기 줄이 길었는데도 회전이 빨랐어요!",
-    },
+    { name: "웨딩 K&S", text: "하객들이 너무 좋아했어요. 방명록 퀄리티 최고!" },
+    { name: "기업 세미나", text: "브랜딩 맞춤이 깔끔했습니다. 현장 진행도 매끄러웠어요." },
+    { name: "학교 축제", text: "대기 줄이 길었는데도 회전이 빨랐어요!" },
   ];
 
   return (
