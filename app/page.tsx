@@ -138,7 +138,7 @@ export default function HomePage() {
             <Card title="빠른 출력" icon={<Camera className="w-5 h-5" />}>
               고사양 장비로 대기 최소화. 많은 하객이 몰려도 끊김 없이 쾌적합니다.
             </Card>
-            <Card title="완전 커스터마이징" icon={<Sparkles className="w-5 h-5" />}>
+            <Card title="맞춤 커스터마이징" icon={<Sparkles className="w-5 h-5" />}>
               템플릿/로고/컬러/문구까지 행사 컨셉에 맞게 1:1 맞춤 제작합니다.
             </Card>
           </div>
@@ -147,7 +147,7 @@ export default function HomePage() {
             <Card title="웨딩 방명록&액자 제공" icon={<Mail className="w-5 h-5" />}>
               액자 & 포토 방명록과 스티커, 펜까지 풀세트로 제공하여 추억을 더합니다.
             </Card>
-            <Card title="모든 행사 맞춤" icon={<Clock className="w-5 h-5" />}>
+            <Card title="모든 행사 적합" icon={<Clock className="w-5 h-5" />}>
               웨딩, 기업행사, 학교축제, 팝업까지. 규모와 장소에 맞춰 구성합니다.
             </Card>
             <Card title="안정 전원 & 설치" icon={<MapPin className="w-5 h-5" />}>
@@ -206,7 +206,7 @@ export default function HomePage() {
                 "스태프2인 · 무제한 인화",
                 "웨딩 방명록 · 액자 · 스티커 제공",
                 "하객 대기 최소화 운영(고사양 장비)",
-                "로고/초성/컬러 완전 커스터마이징",
+                "로고/초성/컬러 맞춤 커스터마이징",
                 "다양한 촬영소품 · 원본파일 제공",
               ].map((txt, i) => (
                 <li key={i} className="flex items-start gap-3">
