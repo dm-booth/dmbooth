@@ -83,7 +83,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-br from-pink-100 via-white to-blue-100" />
         <div className="relative max-w-6xl mx-auto px-6 py-28 text-center">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black text-white text-xs font-semibold mb-8">
-            ❄️Winter Event Event ~ 02/28
+            ❄️Winter Event ~ 02/28
           </span>
           <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight">
             사진은 순간을 남기고,<br /> <span className="text-pink-600">디엠부스</span>는 그 순간을 완성합니다.
@@ -116,7 +116,7 @@ export default function HomePage() {
               연간 행사 <span className="font-bold text-gray-900">200+</span>
             </div>
             <div className="py-3 border-r">
-              만족도 <span className="font-bold text-gray-900">4.9/5</span>
+              만족도 <span className="font-bold text-gray-900">★ 5/5</span>
             </div>
             <div className="py-3">
               템플릿 <span className="font-bold text-gray-900">100+</span>
@@ -251,9 +251,10 @@ export default function HomePage() {
             <ul className="mt-6 space-y-3">
               {[
                 "브랜딩 템플릿 2종 · 로고/폰트/메시지 반영",
-                "QR 다운로드 · SNS 업로드 유도 문구",
-                "배경/사인물/스탠드 등 현장 연출 옵션",
-                "데이터 리포트(촬영 수·피크타임) 제공",
+                "QR코드적용 · 원본파일 · 애니메이션파일 다운 가능",
+                "배경/ 포토부스기기 등 커스텀마이징 옵션",
+                "머리띠·촬영 소품 등 다채로운 아이템 제공",
+                "고사양 장비로 대기 최소화! 빠른 출력",
               ].map((txt, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-pink-600 mt-0.5" />
