@@ -300,7 +300,7 @@ export default function HomePage() {
               <p className="text-gray-600 mt-3">행사 규모와 시간에 따라 맞춤 견적을 드립니다. (부가세 별도)</p>
             </div>
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-100 text-pink-700 text-xs font-bold">
-              겨울 이벤트 ~ 11/31 · 35만원 특가(조건부)
+              겨울 이벤트 ~ 02/28 · 35만원 특가(조건부)
             </span>
           </div>
 
@@ -345,8 +345,27 @@ export default function HomePage() {
                 ],
                 a: "웨딩 포토부스",
               },
-              { q: "브랜딩 템플릿 감각이 뛰어나 캠페인 효과가 컸어요", a: "기업 프로모션" },
-              { q: "아이들이 너무 좋아해서 행사 만족도가 높았습니다", a: "여름 캠프" },
+              {
+  q: [
+     "브랜드이미지가 담긴 아이템을 전달하기 최고인듯 합니다!,",
+    "저희 로고가 들어간 커스텀 포토부스가 분위기를 확 살려줘서 만족도가 정말 높았어요.",
+    "체험객들이 자발적으로 사진을 찍고 공유해주니,",
+    "전체 캠페인 효과도 훨씬 잘 살아났고요.",
+    "100%만족 합니다!! 다음 프로젝트에도 꼭 다시 요청드리고 싶어요:)"
+  ],
+  a: "기업 마케팅팀"
+},
+{
+  q: [
+   "여름캠프 준비하면서 아이들에게 좋은 추억을 어떻게 남겨 줄까 걱정했는데,",
+    "포토부스 하나로 해결했습니다..❤",
+    "사진도 바로바로 잘 나와서 아이들부터",
+    "같이 참여한 부모님, 봉사자들 모두가 좋아하더라고요",
+    "준비한 사람으로서 정말 뿌듯했어요~",
+    "다음 캠프에도 꼭 다시 모시고 싶어요!"
+  ],
+  a: "ㅇㅇ교회 여름캠프"
+},
             ].map((r, i) => (
               <blockquote key={i} className="rounded-2xl border p-6 bg-white shadow-sm">
                 <p className="font-semibold leading-relaxed">“{Array.isArray(r.q) ? r.q.join(" ") : r.q}”</p>
