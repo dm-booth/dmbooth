@@ -372,7 +372,19 @@ export default function HomePage() {
 },
             ].map((r, i) => (
               <blockquote key={i} className="rounded-2xl border p-6 bg-white shadow-sm">
-                <p className="font-semibold leading-relaxed">“{Array.isArray(r.q) ? r.q.join(" ") : r.q}”</p>
+                <p className="font-semibold leading-relaxed">
+  “
+  {Array.isArray(r.q)
+    ? r.q.map((line, idx) => (
+        <React.Fragment key={idx}>
+          {line}
+          {idx !== r.q.length - 1 && <br />}
+        </React.Fragment>
+      ))
+    : r.q}
+  ”
+</p>
+
                 <cite className="not-italic text-sm text-gray-500 inline-block mt-3">— {r.a}</cite>
               </blockquote>
             ))}
