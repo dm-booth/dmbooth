@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "웨딩·이벤트 포토부스 | 디엠부스 DM BOOTH",
   description:
-    "웨딩·기업행사·학교축제 전문 포토부스. 가을 이벤트 35만원~, 대표 현장 진행, 고품질 인화·방명록·템플릿 커스터마이징, 빠른 설치·전국 진행.",
+    "웨딩·기업행사·학교축제 전문 포토부스. 겨울 이벤트 35만원~, 대표 현장 진행, 고품질 인화·방명록·템플릿 커스터마이징, 빠른 설치·전국 진행.",
   keywords: [
     "웨딩 포토부스",
     "행사 포토부스",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "웨딩·이벤트 포토부스 | 디엠부스 DM BOOTH",
     description:
-      "웨딩·기업행사·학교축제 전문 포토부스. 가을 이벤트 35만원~, 대표 현장 진행, 고품질 인화·방명록·템플릿 커스터마이징.",
+      "웨딩·기업행사·학교축제 전문 포토부스. 겨울 이벤트 35만원~, 대표 현장 진행, 고품질 인화·방명록·템플릿 커스터마이징.",
     url: "https://dmbooth.kr",
     siteName: "DM BOOTH",
     locale: "ko_KR",
@@ -300,7 +300,7 @@ export default function HomePage() {
               <p className="text-gray-600 mt-3">행사 규모와 시간에 따라 맞춤 견적을 드립니다. (부가세 별도)</p>
             </div>
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-100 text-pink-700 text-xs font-bold">
-              가을 이벤트 ~ 11/31 · 35만원 특가(조건부)
+              겨울 이벤트 ~ 11/31 · 35만원 특가(조건부)
             </span>
           </div>
 
@@ -309,7 +309,7 @@ export default function HomePage() {
               name="웨딩/기업 EVENT"
               price="₩350,000~"
               highlight
-              bullets={["가을 이벤트", "1.5시간 진행", "현장 스태프 2명", "방명록&액자 제공", "맞춤 템플릿 1종"]}
+              bullets={["겨울 이벤트", "1.5시간 진행", "현장 스태프 2명", "방명록&액자 제공", "맞춤 템플릿 1종"]}
               cta="상담 요청"
             />
             <PriceCard
