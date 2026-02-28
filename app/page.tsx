@@ -83,7 +83,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-br from-pink-100 via-white to-blue-100" />
         <div className="relative max-w-6xl mx-auto px-6 py-28 text-center">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black text-white text-xs font-semibold mb-8">
-            ❄️Winter Event ~ 02/28
+            🌸Spring Event ~ 05/31
           </span>
           <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight">
             사진은 순간을 남기고,<br /> <span className="text-pink-600">디엠부스</span>는 그 순간을 완성합니다.
@@ -310,7 +310,7 @@ export default function HomePage() {
               name="웨딩/기업 EVENT"
               price="₩350,000~"
               highlight
-              bullets={["겨울 이벤트", "1.5시간 진행", "현장 스태프 2명", "방명록&액자 제공", "맞춤 템플릿 1종"]}
+              bullets={["봄 맞이 이벤트", "1.5시간 진행", "현장 스태프 2명", "방명록&액자 제공", "맞춤 템플릿 1종"]}
               cta="상담 요청"
             />
             <PriceCard
