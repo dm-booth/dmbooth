@@ -173,7 +173,7 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
             {[
               { src: "/2X6-film.png", name: "필름 2x6" },
-              { src: "/custom-2cut.png", name: "2컷 클래식" },
+              { src: "/custom-2cut.png", name: "2컷 클래식 (4x6)" },
               { src: "/custom-4cut.png", name: "커스텀드로잉 4컷" },
             ].map((t, i) => (
               <div key={i} className="group overflow-hidden rounded-2xl border bg-white">
@@ -310,13 +310,13 @@ export default function HomePage() {
               name="웨딩/기업 EVENT"
               price="₩350,000~"
               highlight
-              bullets={["봄 맞이 이벤트", "1.5시간 진행", "현장 스태프 2명", "방명록&액자 제공", "맞춤 템플릿 1종"]}
+              bullets={["이벤트 상시 진행", "1.5시간 진행", "현장 스태프 2명 (기업1명)", "방명록&액자 제공", "맞춤 템플릿 1종"]}
               cta="상담 요청"
             />
             <PriceCard
               name="웨딩/기업 BASIC"
               price="₩500,000~"
-              bullets={["1.5시간 진행", "현장 스태프 2명", "무제한 촬영·인화", "브랜딩 템플릿 2종", "SNS 공유 QR"]}
+              bullets={["1.5시간 진행", "현장 스태프 2명(기업1명)", "무제한 촬영·인화", "브랜딩 템플릿 2종", "SNS 공유 QR"]}
               cta="행사 문의"
             />
             <PriceCard
