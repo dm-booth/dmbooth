@@ -301,7 +301,7 @@ export default function HomePage() {
               <p className="text-gray-600 mt-3">행사 규모와 시간에 따라 맞춤 견적을 드립니다. (부가세 별도)</p>
             </div>
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-100 text-pink-700 text-xs font-bold">
-              가을 이벤트 ~ 09/30 · 35만원 특가(조건부)
+              가을 이벤트 ~ 11/30 · 35만원 특가(조건부)
             </span>
           </div>
 
